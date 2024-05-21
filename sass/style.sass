@@ -1,0 +1,421 @@
+html
+    &:root
+        --swiper-theme-color: #000
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    max-width: 1440px
+    margin: 0 auto
+    padding: 20px 32px
+
+.header
+    position: relative
+    height: 108px
+    top: 0
+    left: 0
+    display: flex
+    justify-content: space-between
+    background-color: #ffff
+    &_logo
+        padding: 12px 12px
+        width: 70px
+        height: 74.38px
+    &_menu
+        display: flex
+        flex-direction: column
+        margin-left: 60%
+        &_chapter
+            color: rgb(33, 37, 41)
+            font-family: Roboto
+            font-size: 18px
+            line-height: 21px
+            padding-bottom: 8px
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+        // кнопка закрытия мобильного меню
+        &_close
+            display: none
+    &_phone
+        display: none
+        width: 10%
+    &_number
+        display: flex
+        color: rgb(33, 37, 41)
+        font-family: Roboto
+        font-size: 18px
+        font-weight: 400
+        line-height: 21px
+        letter-spacing: 0px
+        text-align: left
+        text-decoration: none
+    // Тут начинается бургер меню
+    &_burger
+        display: none
+        width: 70px
+        height: 74px
+        background: url("../icons/burger-menu.svg") center/100% no-repeat
+        border: 0
+
+.one_style
+    font-family: Roboto
+    color: rgb(33, 37, 41)
+    font-size: calc(12px + 4 * (100vw / 1440))
+    font-style: normal
+    font-weight: 400
+    line-height: 140%
+    padding: 0
+    margin: 0
+
+.one_title
+    font-family: Helvetica
+    font-size: calc(28px + 20 * (100vw / 1440))
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    padding: 0
+
+.description
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    &_ability
+        width: 70%
+        display: block
+        padding: 0
+        color: var(--text-main, #212529)
+        font-feature-settings: 'clig' off, 'liga' off
+        font-family: Helvetica
+        font-size: calc(40px + 32 * (100vw / 1440))
+        font-style: normal
+        font-weight: 400
+        line-height: 120%
+        text-transform: uppercase
+    &_advertisement
+        display: none
+    &_order
+        padding: 0
+        align-self: flex-end
+        white-space: nowrap
+        margin-bottom: 10px
+        text-decoration: underline
+        color: rgb(33, 37, 41)
+        font-family: Roboto
+        font-size: 18px
+        font-weight: 400
+        line-height: 21px
+
+.poster
+    position: relative
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+.station
+    display: flex
+    flex-direction: column
+    justify-content: left
+    padding: 0
+    &_lor
+        width: 445px
+        color: rgb(33, 37, 41)
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 400
+        line-height: 140%
+    &_pics
+        display: block
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 329px
+        height: 493px
+    &_picture
+        width: 50%
+
+.history
+    display: flex
+    justify-content: space-between
+    margin-top: 120px
+    &_year
+        width: 40%
+    &_bio
+        display: none
+    &_about
+        width: 50%
+        margin-top: 18px
+        padding: 0
+        &_text
+            max-width: 446px
+            padding-bottom: 16px
+        &_info
+            margin-top: 44px
+            &_between
+                margin-bottom: 24px
+                &:last-child
+                    margin-bottom: 0
+
+.numbers
+    font-family: Helvetica
+    font-size: 36px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    margin: 0
+    padding: 0
+
+.system
+    display: flex
+    justify-content: space-between
+    margin-top: 120px
+    &_idea
+        width: 50%
+        padding-top: 20px
+        &_algorithm
+            display: block
+            max-width: 325px
+            margin-bottom: 44px
+        &_block
+            display: flex
+            justify-content: space-between
+            padding: 15px 0
+            border-bottom-width: 2px
+            border-bottom-color: #000
+            border-bottom-style: solid
+            width: 100%
+            &_vers
+                width: 50%
+            &_explanation
+                width: 50%
+
+            &:last-child
+                margin-bottom: 120px
+
+// здесь слайдер
+
+.mobsl
+    display: none
+    margin-top: 40px
+
+.swipper
+    width: 100%
+    height: 100%
+
+.swipper-wrapper
+    width: 100%
+
+.swiper-slide
+    margin: auto
+    left: 10%
+
+.swiper-rtl .swiper-button-prev
+    right: 20px !important
+    left: auto
+
+.swiper-rtl .swiper-button-next
+    left: 20px !important
+    right: auto
+
+.part
+    width: 80%
+    display: flex
+    flex-direction: column
+    position: relative
+    &_furniture
+        z-index: 1
+    &_btnfurniture
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 2
+        width: 100%
+        height: 10%
+        padding: 0 20px
+        background: none
+        border: 0
+        color: #FFF
+        font-family: Roboto
+        font-size: 16px
+        cursor: pointer
+        opacity: 0
+        &:hover
+            opacity: 1
+            background: rgba(33, 37, 41, 0.50)
+// тут слайдер заканчивается
+
+.project
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    &_slide
+        width: 30%
+        display: flex
+        flex-direction: column
+        position: relative
+        &_photo
+            margin-top: 20px
+            z-index: 1
+            gap: 1rem
+        &_bt
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: absolute
+            left: 0
+            bottom: 0
+            z-index: 2
+            width: 100%
+            height: 10%
+            padding: 0 20px
+            background: none
+            border: 0
+            color: #FFF
+            font-family: Roboto
+            font-size: 16px
+            cursor: pointer
+            opacity: 0
+            &:hover
+                opacity: 1
+                background: rgba(33, 37, 41, 0.70)
+
+.reviews
+    margin-top: 120px
+    &_user
+        display: flex
+        gap: 1rem
+        justify-content: space-between
+        margin-top: 32px
+        &_block
+            width: 30%
+            height: 327px
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 0
+            border: 1px solid #000
+            &_marks
+                margin-top: 32px
+                margin-bottom: 32px
+            &_surname
+                margin-bottom: 20px
+                font-family: Helvetica
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                font-weight: bold
+            &_text
+                padding: 0 40px
+                text-align: center
+
+.feedback
+    display: flex
+    justify-content: space-between
+    margin-top: 120px
+    &_wish
+        padding-bottom: 32px
+    &_app
+        display: flex
+        flex-direction: column
+        margin-right: 116px
+        &_inp
+            margin-top: 16px
+            border-top: 0
+            border-left: 0
+            border-right: 0
+            &:hover
+                border: 1px solid rgb(33, 37, 41)
+    &_bt
+        max-width: 176px
+        margin-top: 24px
+        padding: 15px
+        background: rgb(33, 37, 41)
+        color: rgb(255, 255, 255)
+        &:hover
+            background: rgb(221, 215, 192)
+
+    &_playmarket
+        margin-top: 40px
+        display: flex
+        gap: 1rem
+        flex-wrap: wrap
+        &_app
+            border: 0
+            padding: 0
+            &_bg
+                width: 121px
+                height: 36px
+                object-fit: cover
+        &_google
+            // margin-left: 8px
+            border: 0
+            // padding: 0
+            &_store
+                width: 121px
+                height: 36px
+                object-fit: cover
+
+.footer
+    width: 100%
+    margin: 120px 0 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_info
+        display: flex
+        flex-direction: column
+        padding: 0
+        &_brand
+            color: var(--text-main, #212529)
+            font-feature-settings: 'clig' off, 'liga' off
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-transform: uppercase
+        &_protection
+            color: var(--text-main, #212529)
+            font-feature-settings: 'clig' off, 'liga' off
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-transform: uppercase
+    &_delivery
+        padding: 0
+        margin: auto
+        text-align: center
+        color: rgb(33, 37, 41)
+        font-family: Roboto
+        font-size: 16px
+        font-weight: 400
+        line-height: 140%
+        text-decoration: none
+    &_messenger
+        margin: auto 0
+        &_vk
+            color: rgb(33, 37, 41)
+            font-family: Roboto
+            font-size: 18px
+            font-weight: 400
+            line-height: 21px
+            text-transform: uppercase
+            text-decoration: none
+        &_tg
+            padding-left: 40px
+            color: rgb(33, 37, 41)
+            font-family: Roboto
+            font-size: 18px
+            font-weight: 400
+            line-height: 21px
+            text-transform: uppercase
+            text-decoration: none
+
+@import "media"

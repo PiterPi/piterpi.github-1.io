@@ -1,0 +1,282 @@
+@media (max-width: 1320px)
+    .feedback
+        gap: 5rem
+        &_app
+            margin: 0
+
+@media (max-width: 1024px)
+    .header
+        &_menu
+            margin-left: 50%
+        &_number
+            display: flex
+            align-items: center
+    .description
+        &_ability
+            font-size: 52px
+    .station
+        &_lor
+            width: 70%
+            font-size: 16px
+        &_pics
+            position: relative
+            display: flex
+            margin-top: 20%
+            width: 70%
+            height: 80%
+    .numbers
+        font-size: 26px
+    .system
+        &_idea
+            &_block
+                &_vers
+                    padding-right: 10px
+                &_explanation
+                    text-align: justify
+    .feedback
+        &_bilal
+            width: 50%
+
+            font-size: 26px
+
+@media (max-width: 960px)
+
+    .header
+        &_logo
+            margin: auto
+            padding: 0
+        &_menu
+            width: 80%
+            margin: 0 5%
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            gap: 2rem
+            &_chapter
+                font-size: 30px
+                padding-bottom: 0
+        &_phone
+            display: flex
+            &_ph
+                margin: auto
+                width: 70px
+                height: 74.38px
+        &_number
+            display: none
+
+    .reviews
+        &_user
+            &_block
+                width: 30%
+                &_text
+                    width: 100%
+                    padding: 0 20px
+
+    .footer
+        &_info
+            &_brand
+                font-size: 14px
+            &_protection
+                font-size: 14px
+        &_messenger
+            &_vk
+                font-size: 14px
+            &_tg
+                font-size: 14px
+                padding: 0 0 0 20px
+
+@media (max-width: 850px)
+
+    //  Включаем бургерменю
+    .header
+        position: relative
+        &_logo
+            margin-left: 0
+        &_menu
+            display: none
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            z-index: 10
+            width: 100%
+            top: 0
+            left: 0
+            bottom: 0
+            margin: 0
+            padding: 0
+            background-color: #696969
+            gap: 3rem
+            &_close
+                display: flex
+                width: 70px
+                height: 70px
+                background: url("../icons/close.svg") center/100%
+                background-color: #696969
+                border: 0
+                border-radius: 50%
+                &:hover
+                    background-color: #d3b797
+            &_chapter
+                color: #fff
+                font-size: 40px
+                &:hover
+                    color: #d3b797
+        &_phone
+            display: none
+        &_burger
+            display: block
+            margin: auto 0
+
+    .description
+        flex-direction: column
+        &_ability
+            width: 100%
+        &_advertisement
+            display: block
+            margin-top: 20px
+            font-size: 18px
+        &_order
+            margin-top: 24px
+            align-self: start
+
+    .poster
+        margin-top: 24px
+
+    .station
+        position: relative
+        &_lor
+            display: none
+        &_pics
+            display: none
+        &_picture
+            width: 100%
+            height: 261px
+            object-fit: cover
+            overflow: hidden
+
+    .history
+        flex-direction: column
+        margin-top: 48px
+        &_year
+            display: none
+        &_bio
+            display: flex
+            width: 100%
+        &_about
+            width: 100%
+            margin-top: 18px
+            padding: 0
+            &_text
+                padding-bottom: 16px
+                text-align: start
+            &_info
+                margin-top: 44px
+                &_between
+                    margin-bottom: 24px
+
+    .numbers
+        font-size: 24px
+
+    .system
+        flex-direction: column
+        margin-top: 48px
+        &_idea
+            width: 100%
+            padding-top: 20px
+            &_block
+                display: inline-flex
+                padding: 15px 0
+                border-bottom-width: 2px
+                border-bottom-color: White
+                border-bottom-style: solid
+                width: 100%
+                &_vers
+                    width: 100%
+                &_explanation
+                    width: 100%
+                    text-indent: 0
+                    border-bottom: 1px solid
+                    padding-bottom: 20px
+                    text-align: start
+                &:last-child
+                    margin-bottom: 48px
+    // включаем слайдер
+    .mobsl
+        display: flex
+
+    .project
+        display: none
+
+    .reviews
+        margin-top: 48px
+        &_user
+            flex-direction: column
+            align-items: center
+            &_block
+                width: 100%
+                &_text
+                    padding: 0 60px
+
+    .feedback
+        flex-direction: column
+        align-items: center
+        &_wish
+            margin-bottom: 20px
+        &_bilal
+            display: none
+    .footer
+        &_delivery
+            padding: 15px 0
+        &_messenger
+            text-align: end
+            &_vk
+                font-size: 18px
+            &_tg
+                font-size: 18px
+                padding: 0
+        &_info
+            &_brand
+                font-size: 18px
+            &_protection
+                font-size: 18px
+
+@media (max-width: 480px)
+    html
+        &:root
+            --swiper-navigation-size: 150 * 27
+
+    .one_style
+        font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 620px) / 1440))
+    .one_title
+        font-size: calc(28px + (20 + 20 * 0.7) * ((100vw - 620px) / 1440))
+
+    .description
+        &_ability
+            font-size: calc(40px + (32 + 32 * 0.7) * ((100vw - 620px) /1440))
+
+    .numbers
+        font-size: 20px
+
+    .feedback
+        flex-direction: column
+        align-items: center
+        &_wish
+            margin-bottom: 20px
+        &_bilal
+            display: none
+    .footer
+        &_delivery
+            padding: 15px 0
+            font-size: 12px
+        &_messenger
+            text-align: end
+            &_vk
+                font-size: 12px
+            &_tg
+                font-size: 12px
+        &_info
+            &_brand
+                font-size: 12px
+            &_protection
+                font-size: 12px
